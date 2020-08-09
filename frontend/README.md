@@ -1,4 +1,4 @@
-# sparkfrontend
+# frontend
 
 A new Flutter project.
 
