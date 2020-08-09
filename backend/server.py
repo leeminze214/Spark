@@ -4,7 +4,8 @@ app = Flask(__name__)
 @app.route("/upload", methods=["POST"])
 def upload():
     if request.method == "POST":
-        print(request)
+        print(request.data)
+        return request.data
 
 @app.route("/test", methods=["GET", "POST"])
 def test():
