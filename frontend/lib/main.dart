@@ -58,7 +58,6 @@ class RecordButton extends StatelessWidget {
               width: 100,
               height: 100,
               child: 
-              /*
               RaisedButton(
                 onPressed: () => {},
                 color: Colors.grey,
