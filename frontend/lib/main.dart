@@ -32,15 +32,46 @@ class Home extends StatefulWidget {
 }
 
 class HomeState extends State<Home> {
-
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
     return Scaffold(
       body: Center(
-
+        child: RecordButton(),
       ),
     );
+  }
+}
+
+class RecordButton extends StatelessWidget {
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Image(
+              image: NetworkImage(
+                  "https://media.discordapp.net/attachments/739289375883526144/742073225546301620/d2e2643097584e8f4a5421ca429b42b75dd55b91.png?width=936&height=702"),
+              width: 200,
+            ),
+            SizedBox(
+              width: 100,
+              height: 100,
+              child: 
+              /*
+              RaisedButton(
+                onPressed: () => {},
+                color: Colors.grey,
+                child: Icon(
+                  Icons.mic,
+                  color: Colors.white,
+                  size: 50,
+                ),
+                shape: CircleBorder(),
+              ),
+            ),
+          ],
+        ),
+    ));
   }
 }
