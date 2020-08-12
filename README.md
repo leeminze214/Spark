@@ -1,2 +1,2 @@
 # Spark
-temp: flutter app
+Spark Hackthon submission. Flutter app.
